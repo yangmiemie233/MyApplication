@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search">
+
+
+    <EditText
+        android:id="@+id/search_input"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/listView"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-62dp"
+        android:layout_marginStart="30dp"
+        android:ems="10"
+        android:hint="例如前端、计算机……"
+        android:inputType="textPersonName" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="505dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="62dp"/>
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="39dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="38dp"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@drawable/search" />
+
+
+</RelativeLayout>

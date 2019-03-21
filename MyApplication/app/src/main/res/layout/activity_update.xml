@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Update">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="44dp"
+        android:layout_height="34dp"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <EditText
+        android:id="@+id/head_name"
+        android:layout_width="491dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="标题" />
+
+    <EditText
+        android:id="@+id/keyWords"
+        android:layout_width="448dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="关键字" />
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="389dp"
+        android:layout_marginBottom="0dp"
+        android:background="@android:drawable/edit_text"
+        android:enabled="true"
+        android:gravity="top"
+        android:hint="内容...."
+        android:inputType="textMultiLine"
+        android:maxLines="25"
+        android:minLines="8"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:text="确定修改，保存"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/background_light" />
+</LinearLayout>

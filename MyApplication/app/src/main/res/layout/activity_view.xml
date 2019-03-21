@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发布最新博客"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="25sp" />
+
+
+    <EditText
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="标题" />
+
+    <EditText
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="种类"
+        android:singleLine="false" />
+
+    <EditText
+        android:id="@+id/keyWords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="关键词/句子" />
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="333dp"
+        android:layout_marginBottom="0dp"
+        android:background="@android:drawable/edit_text"
+        android:enabled="true"
+        android:gravity="top"
+        android:hint="内容...."
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:minLines="8"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:background="#ffb744"
+        android:text=" 发      布"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+</LinearLayout>

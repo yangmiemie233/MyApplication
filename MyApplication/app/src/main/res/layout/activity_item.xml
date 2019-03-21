@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".item">
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="353dp"
+        android:layout_height="406dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="vertical"
+        android:text="内容"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/back"
+        app:srcCompat="@drawable/cc" />
+
+    <TextView
+        android:id="@+id/head_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="67dp"
+        android:text="标题"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/belongTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/head_name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="43dp"
+        android:text="作者"
+        android:textColor="@android:color/holo_blue_light" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginStart="0dp"
+        app:srcCompat="@drawable/number" />
+
+    <TextView
+        android:id="@+id/createdAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/belongTo"
+        android:layout_marginTop="113dp"
+        android:text="时间" />
+
+    <TextView
+        android:id="@+id/visit_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/createdAt"
+        android:layout_marginEnd="120dp"
+        android:text="访问量" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="31dp"
+        android:layout_height="29dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+</RelativeLayout>
